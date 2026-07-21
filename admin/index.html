@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<title>ValorStars Admin</title>
+
+<style>
+
+body{
+background:#111827;
+font-family:Arial;
+color:white;
+padding:30px;
+}
+
+table{
+width:100%;
+border-collapse:collapse;
+margin-top:20px;
+}
+
+td,th{
+border:1px solid #333;
+padding:12px;
+}
+
+th{
+background:#ff4655;
+}
+
+tr:nth-child(even){
+background:#1f2937;
+}
+
+button{
+    background:#ff4655;
+    color:white;
+    border:none;
+    padding:15px 25px;
+    border-radius:10px;
+    cursor:pointer;
+    font-size:18px;
+    margin-bottom:20px;
+}
+
+button:hover{
+    background:#ff2d40;
+}
+
+#kazanan{
+    margin:20px 0;
+    color:#00ff99;
+    font-size:28px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<h1>📋 Katılımcılar</h1>
+
+<button id="cekilisBtn">🎲 Kazananı Seç</button>
+
+<h2 id="kazanan"></h2>
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>Ad</th>
+
+<th>Email</th>
+
+<th>Youtube</th>
+
+<th>Discord</th>
+
+</tr>
+
+</thead>
+
+<tbody id="tbody"></tbody>
+
+</table>
+
+<script type="module" src="admin.js"></script>
+
+</body>
+</html>
